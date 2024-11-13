@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premrajesh R | Portfolio/Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="header-logo">
+            <img src="Graduate.avif" alt="Profile Photo" class="small-photo">
+            <h1 class="logo">Premrajesh R</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Portfolio.html">Home</a></li>
+                <li><a href="Who am .html">Who am I?</a></li>
+                <li><a href="Knowledge .html">Knowledge</a></li>
+                <li><a href="My works.html">My Works</a></li>
+                <li><a href="Talk to me.html">Talk to me!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="social-icons">
+        <a href="https://www.facebook.com/premrajesh304/" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/itsdreamboy304/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/PremrajeshR" target="_blank"><i class="fab fa-twitter"></i></a>
+
+    </div>
+
+    <section id="experience" class="section">
+        <div class="experience-content">
+            <h2>My Experience</h2>
+            <p>A journey of growth and learning through various roles and projects.</p>
+
+            <div class="experience-grid">
+                <!-- Experience Card 1 -->
+                <div class="experience-card">
+                    <div class="experience-icon">&#128187;</div>
+                    <h3>Web Development Intern</h3>
+                    <h4>LearnX | 3 Months</h4>
+                    <p>Developed and optimized front-end components, focusing on responsive design and user experience.</p>
+                    <button onclick="openModal('modal1')">View Certificate</button>
+                </div>
+
+                <!-- Experience Card 2 -->
+                <div class="experience-card">
+                    <div class="experience-icon">&#128736;</div>
+                    <h3>Python Intern</h3>
+                    <h4>NSIC | 1 Week</h4>
+                    <p>Gained hands-on experience with Python, learning about scripting, automation, and foundational programming.</p>
+                    <button onclick="openModal('modal2')">View Certificate</button>
+                </div>
+
+                <!-- Experience Card 3 -->
+                <div class="experience-card">
+                    <div class="experience-icon">&#9889;</div>
+                    <h3>Technical Team Coordinator</h3>
+                    <h4>AICTE ATAL FDP | Certified</h4>
+                    <p>Coordinated tech-related tasks and supported workshop activities in an AICTE-sponsored FDP program.</p>
+                    <button onclick="openModal('modal3')">View Certificate</button>
+                </div>
+
+                <!-- Experience Card 4 -->
+                <div class="experience-card">
+                    <div class="experience-icon">&#128104;</div>
+                    <h3>Cyber Security Workshop</h3>
+                    <h4>2 Days</h4>
+                    <p>Participated in a hands-on workshop on Cyber Security, learning essential practices for security and privacy.</p>
+                    <button onclick="openModal('modal4')">View Certificate</button>
+                </div>
+
+                 <!-- Experience Card 5 -->
+                 <div class="experience-card">
+                    <div class="experience-icon">&#9889;</div>
+                    <h3>Python Workshop</h3>
+                    <h4>1 Day</h4>
+                    <p>Coordinated tech-related tasks and supported workshop activities in an AICTE-sponsored FDP program.</p>
+                    <button onclick="openModal('modal3')">View Certificate</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modals -->
+<!-- Certificate Modals -->
+<div id="modal1" class="modal">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <img src="LearnX.png" class="modal-content">
+</div>
+
+<div id="modal2" class="modal">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <img src="certificates/certificate2.jpg" class="modal-content">
+</div>
+
+<div id="modal3" class="modal">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <img src="certificates/certificate3.jpg" class="modal-content">
+</div>
+
+<div id="modal4" class="modal">
+    <span class="close" onclick="closeModal('modal4')">&times;</span>
+    <img src="certificates/certificate4.jpg" class="modal-content">
+</div>
+
+<div id="modal5" class="modal">
+    <span class="close" onclick="closeModal('modal5')">&times;</span>
+    <img src="certificates/certificate3.jpg" class="modal-content">
+</div>
+
+    <footer>&copy; 2024 Premrajesh. R | All Rights Reserved</footer>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #030008;
+}
+
+/* Header Styling */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #030008;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo .small-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    border: 2px solid #ff5722;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff5722;
+}
+/* Apply basic styling to your list */
+ul {
+    position: relative; /* Ensure positioning for animation */
+    opacity: 0; /* Start with invisible */
+    transform: translateY(20px); /* Start slightly below */
+    animation: slideUp 3s ease forwards; /* Apply animation */
+  }
+  
+
+  /* Define the animation keyframes */
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start 20px from the bottom */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move to its final position */
+  }
+}
+
+.social-icons {
+    position: fixed;
+    left: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transform: translateY(20px); /* Start slightly below */
+    animation: slideUp 3s ease forwards; /* Apply animation */
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #efe6e6;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0078FF; /* Customize hover color */
+}
+
+/* Define the animation keyframes */
+@keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start 20px from the bottom */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move to its final position */
+  }
+}
+
+
+/* Who Am I Section */
+#who-am-i {
+    padding: 5rem 5%;
+    background-color: #030008;
+    color: #e0e0e0;
+}
+
+#who-am-i h2 {
+    font-size: 2.8rem;
+    color: #ff5722;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center; /* Centers the topic title */
+    opacity: 0;
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto; /* Centers the subtitle content */
+    text-align: justify; /* Justifies the text */
+    color: #e0e0e0;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out 0.5s forwards;
+}
+
+.container h3 {
+    font-size: 1.8rem;
+    color: #eb977e;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center; /* Centers the subtitles */
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out 1s forwards;
+}
+
+/* Key Strengths and Expertise Item */
+.expertise-item, .skill-item {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+    color: #e0e0e0;
+    max-width: 800px;
+    margin: 0 auto; /* Centers the expertise/skill item content */
+    text-align: justify;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out 1.5s forwards;
+}
+
+.expertise-item::before, .skill-item::before {
+    content: "•";
+    color: #ff5722;
+    position: absolute;
+    left: -20px;
+    font-size: 1.5rem;
+    top: 0;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #030008;
+    color: #e0e0e0;
+    font-size: 1rem;
+}
